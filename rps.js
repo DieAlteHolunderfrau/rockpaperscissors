@@ -17,13 +17,12 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    let choice = '';
-    while (choice !== "Rock" && choice !== "Paper" && choice !== "Scissors"){
-        choice = prompt('Please choose "Rock", "Paper" or "Scissors": ');
-        choice = choice.toLowerCase();
-        choice = choice.substring(0,1).toUpperCase() + choice.substring(1);
-        console.log(choice);
-    }
+  let choice = "";
+  while (choice !== "Rock" && choice !== "Paper" && choice !== "Scissors") {
+    choice = prompt('Please choose "Rock", "Paper" or "Scissors": ');
+    choice = choice.toLowerCase();
+    choice = choice.substring(0, 1).toUpperCase() + choice.substring(1);
+  }
   return choice;
 }
 
